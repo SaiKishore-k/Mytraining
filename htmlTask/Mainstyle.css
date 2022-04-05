@@ -1,0 +1,237 @@
+body{
+    display: block;
+}
+.logopart{
+    display: block;
+    background-color:darkblue;
+    text-align: center;
+    height: 60px;
+    padding: 3px;
+}
+.imagelogo{
+    height: 60px;
+    width: 100px;
+}
+.welcomenote{
+    display: none;
+    z-index: 0;
+}
+.part2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+}
+.Mainnews{
+    margin: 10px;
+}
+.bottom{
+    background-color:darkblue;
+    color: aliceblue;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.subscribe-button{
+    background-color: darkblue;
+    color: aliceblue;
+}
+.col1,.col3{
+    width: 33.33%;
+    padding: 10px;
+}
+.col2{
+    width: 33.33%;
+    padding: 10px;
+    color: cornflowerblue;
+}
+.image1,.image2,.image3{
+    height: 200px;
+    width:250px;
+}
+.MoreRead{
+    background-color: coral;
+    color: aliceblue;
+}
+.title{
+    color:Navy;
+    font-weight: bolder;
+}
+.remain{
+    width: 250px;
+}
+
+
+/*pixel5 screen min-width=393 and max-width=851*/
+
+@media screen and (max-width:851px) and (min-width:393px){
+    body{
+        display: block;
+        margin: 16px;
+    }
+    .logopart{
+        display:flex;
+        background-color:darkblue;
+        text-align: left;
+        height: 250px;
+        padding: 3px;
+    }
+    .imagelogo{
+        height: 250px;
+        width: 300px;
+    }
+    .part2{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        text-align: center;
+        height: 220px;
+    }
+    .subs{
+        font-size: 30px;
+    }
+    .getmail{
+        height: 50px;
+        width: 150px;
+        font-size: 25px;
+    }
+    .subscribe-button{
+        background-color: darkblue;
+        color: aliceblue;
+        font-size: 25px;
+    }
+    .categ{
+        font-size: 30px;
+    }
+    .col1,.col3{
+        width: 33.33%;
+        padding: 10px;
+        height: 200px;
+    }
+    .col2{
+        width: 33.33%;
+        padding: 10px;
+        color: cornflowerblue;
+        height:200px;
+        font-size: 30px;
+    }
+    select{
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+    }
+
+    .image1,.image2,.image3{
+        height: 400px;
+        width:350px;
+    }
+    .post,.content{
+        font-size: 35px;
+        font-family:Roboto;
+    } 
+    .MoreRead{
+        background-color: coral;
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .title{
+        color:darkred;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .remain{
+        width: 0px;
+    }
+    .bottom{
+        background-color:darkblue;
+        color: aliceblue;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+/*pixel5 screen orientation landscape*/
+@media screen and (orientation:landscape) {
+    .logopart{
+        display: block;
+        background-color:darkblue;
+        text-align: center;
+        height: 60px;
+        padding: 3px;
+    }
+    .imagelogo{
+        height: 60px;
+        width: 100px;
+    }
+    .part2{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        text-align: center;
+        height: 100px;
+    }
+    .col1,.col3{
+        width: 33.33%;
+        padding: 10px;
+    }
+    .col2{
+        width: 33.33%;
+        padding: 10px;
+        color: cornflowerblue;
+    }
+    .categ{
+        font-size: 15px;
+    }
+    select,.getmail{
+        height: 20px;
+        width: auto;
+        font-size: 15px;
+    }
+    .subs{
+        font-size: 15px;
+    }
+    .subscribe-button{
+        background-color: darkblue;
+        color: aliceblue;
+        font-size: 15px;
+    }
+    .Mainnews{
+        margin: 10px;
+    }
+    .image1,.image2,.image3{
+        height: 200px;
+        width:250px;
+    }
+    .MoreRead{
+        background-color: coral;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .title{
+        color:Navy;
+        font-weight: bolder;
+        font-size:30px;
+    }
+    .post,.content{
+        font-size: medium;
+    }
+    .remain{
+        width: 0px;
+    }
+    .bottom{
+        background-color:darkblue;
+        color: aliceblue;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+}
