@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/transportation-on-vacation
+
 function rentalCarCost(d) {
   // Your solution here
   var total=d*40;
