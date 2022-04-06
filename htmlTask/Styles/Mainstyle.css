@@ -52,17 +52,24 @@ body{
     width:250px;
 }
 .MoreRead{
+    margin: 20px;
     background-color: coral;
     color: aliceblue;
 }
 .title{
+    margin: 20px;
     color:Navy;
     font-weight: bolder;
+}
+.post{
+    margin: 20px;
 }
 .remain{
     width: 250px;
 }
-
+.content{
+    margin: 20px;
+}
 
 /*pixel5 screen min-width=393 and max-width=851*/
 
