@@ -1,5 +1,4 @@
-
-#Dynamic Scope Task is done.
+# Scope and Functions
 
 
  
