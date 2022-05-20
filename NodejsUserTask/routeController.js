@@ -86,12 +86,17 @@ const removeUser = function(request,response){
 const getAutoSuggestUsers= function(request,response){
     const  subString = request.params.loginSubstring;
     const limit = request.params.limit;
+    if(users.length>=limit){
     const UserSortedList = users.sort((username1,username2)=>username1.login.localeCompare(username2.login));
 
     const suggestedUsers= (UserSortedList.filter(users=>users.login.indexOf(subString)!=-1)).slice(0,limit);
 
     response.send(suggestedUsers);
     response.statusCode=200;
+    }
+    else{
+        response.send(`There are only ${users.length} number of users`);
+    }
 
 }
 
