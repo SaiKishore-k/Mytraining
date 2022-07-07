@@ -1,0 +1,12 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/FontsFree-Net-L0xkDF4xlVMF-BfR8bXMIjDwjmqxf7-pAVU_.ttf);
+
+}
+
+h2{
+    color: blue;
+}
+*{
+    font-family: 'roboto';
+}
