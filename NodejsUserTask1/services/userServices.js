@@ -16,61 +16,41 @@ exports.userValidator = (schema) => {
 
 //get all users from db
 exports.getUsersFromDB = async () => {
-  try {
-    let data = await users.findAll();
-    console.log(data);
-    return data;
-  }
-  catch (e) {
-    console.log(e.message);
-  }
+    return await users.findAll();
 }
 
 //get user by id from db
 exports.getUserById = async (id) => {
-  try {
     let user = await users.findByPk(id);
+    if(!user){
+      let error = new Error("User not found");
+      error.status=404;
+      throw error;
+    }
     return user;
   }
-  catch (e) {
-    console.log(e.message);
-  }
-}
 
 //save user data in db
 exports.saveUserInDB = async (id, login, age, password, isdeleted) => {
-  try {
-    let res = await users.bulkCreate([                  
+ 
+    return await users.bulkCreate([                  
       { id: id, login: login, age: age, password: password, isdeleted: isdeleted },
     ]);
-    return res;
+   
   }
-  catch (e) {
-    return null;
-  }
-}
 
 //update user by id in db
 exports.updateUserInDB = async (id, login, password, age) => {
-  try {
-    let res = await users.update(
+    return await users.update(
       { login: login, password: password, age: age },
       { where: { id: id } }
     );
-    return res;
   }
-  catch (e) {
-    console.log(e.message);
-  }
-}
+  
 
 //delete user by id from db
 exports.deleteUserFromDB = async (id) => {
-  try {
-    let res = await users.destroy({ where: { id: id } });
-    return res;
-  }
-  catch (e) {
-    console.log(e.message);
-  }
+  
+    return await users.destroy({ where: { id: id } });
+  
 }

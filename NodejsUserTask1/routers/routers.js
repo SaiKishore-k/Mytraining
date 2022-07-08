@@ -11,7 +11,7 @@ router.get('/users/:id', userController.getUsersById);
 router.post('/users', userValidator(userSchema), userController.saveUser);   //save user
 router.put('/users/:id', userValidator(userSchema), userController.updateUser); //update by id
 router.delete('/users/:id', userController.deleteUser); //delete by id
-
+router.use('/*',userController.invalidUrl);
 module.exports = {
     router: router,
 }
