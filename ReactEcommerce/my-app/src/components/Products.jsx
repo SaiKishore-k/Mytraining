@@ -26,7 +26,7 @@ const Products = () => {
               <ul className="navbar-nav">
                 <li className="nav-item text-center">
                   <NavLink
-                    to={`/buyNow/${item.id}`}
+                    to={`/buynow/${item.id}`}
                     className="btn btn-outline-primary text-center"
                   >
                     Buy Now
