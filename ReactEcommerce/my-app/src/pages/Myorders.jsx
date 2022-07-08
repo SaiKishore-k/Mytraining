@@ -7,7 +7,7 @@ const Myorders = () => {
             <div>
                 <div className='container'>
                     <div className="list-group">
-                        <a href="/#" className="list-group-item list-group-item-action flex-column align-items-start active">
+                        <a href="/#" className="list-group-item list-group-item-action flex-column align-items-start ">
                             <div className="d-flex w-100 justify-content-between">
                                 <small className="mb-1"><b>Order Placed:</b> {item.orderdate}</small>
                                 <small><b>Status:</b> {item.status}</small>

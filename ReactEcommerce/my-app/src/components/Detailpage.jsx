@@ -35,11 +35,14 @@ const Detailpage = () => {
         <div className="col-md-6 d-flex flex-column justfy-content-center">
           <h1 className="display-5 fw-bold">{product.title}</h1>
           <hr />
-          <h6 className="my-2">Price : ${product.price}</h6>
-          <h6 className="my-2">Author : {product.authors}</h6>
-          <h6 className="my-2">PageCount : {product.pageCount}</h6>
-          <h6 className="my-2">Isbn : {product.isbn}</h6>
-          <p className="lead" style={{backgroundColor:"grey",color:"black"}}>{product.longDescription}</p>
+          <h5 className="my-2">Price : ${product.price}</h5>
+          <h5 className="my-2">Author : {product.authors}</h5>
+          <h5 className="my-2">PageCount : {product.pageCount}</h5>
+          <h5 className="my-2">Isbn : {product.isbn}</h5>
+          <h5>Book Description :</h5>
+          <div>
+          <p className="lead" style={{backgroundColor:"grey",color:"black"}}> <br/>{product.longDescription}</p>
+          </div>
           <button
             onClick={() => cartHandler(product)}
             className="btn btn-outline-prmary my-5"

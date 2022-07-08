@@ -66,7 +66,7 @@ const books = [
     },
     
     {
-      id: 6,
+      id: 5,
       title: "Collective Intelligence in Action",
       isbn: "1933988312",
       pageCount: 425,
@@ -82,7 +82,7 @@ const books = [
       categories: ["Internet"],
     },
     {
-      id: 7,
+      id: 6,
       title: "Zend Framework in Action",
       isbn: "1933988320",
       pageCount: 432,
@@ -99,7 +99,7 @@ const books = [
       categories: ["Web Development"],
     },
     {
-      id: 8,
+      id: 7,
       title: "Flex on Java",
       isbn: "1933988797",
       pageCount: 265,
@@ -116,7 +116,7 @@ const books = [
       categories: ["Internet"],
     },
     {
-      id: 9,
+      id: 8,
       title: "Griffon in Action",
       isbn: "1935182234",
       pageCount: 375,
@@ -133,10 +133,11 @@ const books = [
       categories: ["Java"],
     },
     {
-      id: 10,
+      id: 9,
       title: "OSGi in Depth",
       isbn: "193518217X",
       pageCount: 325,
+      price:250,
       publishedDate: { $date: "2011-12-12T00:00:00.000-0800" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alves.jpg",
@@ -149,7 +150,7 @@ const books = [
       categories: ["Java"],
     },
     {
-      id: 11,
+      id: 10,
       title: "Flexible Rails",
       isbn: "1933988509",
       pageCount: 592,
@@ -166,10 +167,11 @@ const books = [
       categories: ["Web Development"],
     },
     {
-      id: 13,
+      id: 11,
       title: "Hello! Flex 4",
       isbn: "1933988762",
       pageCount: 258,
+      price:250,
       publishedDate: { $date: "2009-11-01T00:00:00.000-0700" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong3.jpg",
@@ -182,7 +184,7 @@ const books = [
       categories: ["Internet"],
     },
     {
-      id: 14,
+      id: 12,
       title: "Coffeehouse",
       isbn: "1884777384",
       pageCount: 316,
@@ -199,10 +201,11 @@ const books = [
       categories: ["Miscellaneous"],
     },
     {
-      id: 15,
+      id: 13,
       title: "Team Foundation Server 2008 in Action",
       isbn: "1933988592",
       pageCount: 344,
+      price:250,
       publishedDate: { $date: "2008-12-01T00:00:00.000-0800" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg",
@@ -214,7 +217,7 @@ const books = [
       categories: ["Microsoft .NET"],
     },
     {
-      id: 16,
+      id: 14,
       title: "Brownfield Application Development in .NET",
       isbn: "1933988711",
       pageCount: 550,
@@ -231,10 +234,11 @@ const books = [
       categories: ["Microsoft"],
     },
     {
-      id: 17,
+      id: 15,
       title: "MongoDB in Action",
       isbn: "1935182870",
       pageCount: 0,
+      price:250,
       publishedDate: { $date: "2011-12-12T00:00:00.000-0800" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg",
@@ -249,7 +253,7 @@ const books = [
     
    
     {
-      id: 20,
+      id: 16,
       title: "Taming Jaguar",
       isbn: "1884777686",
       pageCount: 362,
@@ -265,10 +269,11 @@ const books = [
       categories: ["PowerBuilder"],
     },
     {
-      id: 21,
+      id: 17,
       title: "3D User Interfaces with Java 3D",
       isbn: "1884777902",
       pageCount: 520,
+      price:250,
       publishedDate: { $date: "2000-08-01T00:00:00.000-0700" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barrilleaux.jpg",
@@ -280,7 +285,7 @@ const books = [
       categories: ["Java", "Computer Graphics"],
     },
     {
-      id: 22,
+      id: 18,
       title: "Hibernate in Action",
       isbn: "193239415X",
       pageCount: 400,
@@ -297,10 +302,11 @@ const books = [
     },
   
     {
-      id: 24,
+      id: 19,
       title: "Java Persistence with Hibernate",
       isbn: "1932394885",
       pageCount: 880,
+      price:250,
       publishedDate: { $date: "2006-11-01T00:00:00.000-0800" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer2.jpg",
@@ -313,10 +319,11 @@ const books = [
       categories: ["Java"],
     },
     {
-      id: 25,
+      id: 20,
       title: "JSTL in Action",
       isbn: "1930110529",
       pageCount: 480,
+      price:250,
       publishedDate: { $date: "2002-07-01T00:00:00.000-0700" },
       thumbnailUrl:
         "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bayern.jpg",
