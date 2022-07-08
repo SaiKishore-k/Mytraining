@@ -2,13 +2,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
-import Contact from './components/Contact'
-import Myorders from './components/Myorders';
-import About from './components/About';
+import Home from './pages/Home';
+import Contact from './pages/Contact'
+import Myorders from './pages/Myorders';
+import About from './pages/About';
 import Products from './components/Products';
 import Detailpage from './components/Detailpage';
-import Cart from './components/Cart';
+import Cart from './pages/Cart';
 import Checkout from './components/Checkout';
 import Buynow from './components/Buynow';
 function App() {
