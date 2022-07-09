@@ -1,18 +1,27 @@
-import {  NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActiveUsersComponent } from './active/active-users/active-users.component';
-import { DeletedUsersComponent } from './deleted/deleted-users/deleted-users.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
+import { ActiveComponent } from './modules/active/active.component';
+import { DeletedComponent } from './modules/deleted/deleted.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'home',component:HomeComponent},
-  {path:'active' , component:ActiveUsersComponent},
-  {path:'deleted' , component:DeletedUsersComponent},
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'active',
+    component: ActiveComponent
+  },
+  {
+    path: 'deleted',
+    component: DeletedComponent
+  },
   {
     path: 'manage',
-    loadChildren: () => import('./manage/manage.module').then((m) => m.ManageModule),
- },
+    loadChildren: () => import('./modules/manage/manage.module')
+      .then(m => m.ManageModule)
+  },
 ];
 
 @NgModule({

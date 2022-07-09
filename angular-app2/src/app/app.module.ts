@@ -1,24 +1,25 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ActiveModule } from './active/active.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DeletedModule } from './deleted/deleted.module';
-import { HomeComponent } from './home/home.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './components/home/home.component';
+import { ActiveModule } from './modules/active/active.module';
+import { ComponentsModule } from './components/components.module';
+import { DeletedModule } from './modules/deleted/deleted.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ActiveModule,
     DeletedModule,
-    NgbModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
