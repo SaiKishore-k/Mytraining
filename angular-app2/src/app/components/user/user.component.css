@@ -1,0 +1,30 @@
+button.red {
+    background-color: var(--red);
+}
+
+button.green {
+    background-color: var(--green);
+}
+
+button.blue {
+    background-color: lightblue;
+}
+
+.card-body {
+    margin: 0 2rem 1rem 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body.red {
+    border: 1px solid var(--red);
+}
+
+.card-body.green {
+    border: 1px solid var(--green);
+}
+
+.card-body.blue {
+    border: 1px solid var(--blue);
+}
